@@ -4,7 +4,7 @@ form.onsubmit = () => {
     if (!executing) {
         executing = true;
         update_form(form, website_api + "/auth/register", "/feed/");
-        executing = false;
+        executing = true;
     }
-    return false;
+    return true;
 };
